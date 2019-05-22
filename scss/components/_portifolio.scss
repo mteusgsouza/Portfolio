@@ -1,0 +1,124 @@
+/* Portfolio Section
+--------------------------------*/
+
+#portfolio {
+    padding: 60px 0;
+    #portfolio-flters {
+      padding: 0;
+      margin: 5px 0 35px 0;
+      list-style: none;
+      text-align: center;
+      li {
+        cursor: pointer;
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 6px 10px;
+        font-size: 16px;
+        line-height: 20px;
+        color: $dark-blue;
+        margin-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+        &:hover,
+        &.filter-active {
+          color: $primary;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+      .portfolio-wrap {
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        &:hover img {
+          opacity: 0.4;
+          transition: 0.3s;
+        }
+        .portfolio-info {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          text-align: center;
+          opacity: 0;
+          transition: 0.2s linear;
+          h4 {
+            font-size: 22px;
+            line-height: 1px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            padding-bottom: 0;
+            a {
+              color: #fff;
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+          p {
+            padding: 0;
+            margin: 0;
+            color: #f8fcff;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+          .link-preview,
+          .link-details {
+            display: inline-block;
+            line-height: 1;
+            text-align: center;
+            width: 36px;
+            height: 36px;
+            background: $primary;
+            border-radius: 50%;
+            margin: 10px 4px 0 4px;
+          }
+          .link-preview i,
+          .link-details i {
+            padding-top: 6px;
+            font-size: 22px;
+            color: #fff;
+          }
+          .link-preview:hover,
+          .link-details:hover {
+            background: #42c3e8;
+          }
+          .link-preview:hover i,
+          .link-details:hover i {
+            color: #fff;
+          }
+        }
+        &:hover {
+          background: #282646;
+          .portfolio-info {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  

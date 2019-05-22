@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+
+#topbar {
+  padding: 0 0 10px 0;
+  font-size: 14px;
+  transition: all 0.5s;
+  .social-links {
+    text-align: right;
+    a {
+      color: $dark-blue;
+      padding: 4px 12px;
+      display: inline-block;
+      line-height: 1px;
+      &:hover {
+        color: $primary;
+      }
+      &:first-child {
+        border-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #topbar {
+    display: none;
+  }
+}
+

@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/undraw_bg-intro-op60-2.svg");
+  background-repeat: no-repeat;
+  background-color: $bg-intro;
+  background-position: left;
+  background-size: cover 50%;
+  .intro-info {
+    h2 {
+      color: $dark-blue;
+      margin-bottom: 40px;
+      font-size: 48px;
+      font-weight: 700;
+      text-shadow: $text-shadow;
+      span {
+        color: $primary;
+      }
+    }
+    .btn-get-started,
+    .btn-abilities {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 10px 32px;
+      border-radius: 4px;
+      transition: 0.5s;
+      color: #fff;
+      background: $primary;
+      box-shadow: $btn-shadow;
+    }
+    .btn-get-started:hover,
+    .btn-abilities:hover {
+      background: $blue;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #intro {
+    height: auto;
+    padding: 80px 0 60px 0;
+    .container {
+      height: auto !important;
+    }
+    .intro-img {
+      width: 80%;
+    }
+    .intro-info {
+      text-align: center;
+      padding-top: 40px;
+      h2 {
+        font-size: 34px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #intro .intro-info {
+    padding-top: 80px;
+  }
+}

@@ -1,0 +1,98 @@
+  /*--------------------------------------------------------------
+  # Sections
+  --------------------------------------------------------------*/
+  
+  /* Sections Header
+  --------------------------------*/
+  
+  .section-header {
+    h3 {
+      font-size: 36px;
+      color: $gray-blue;
+      text-align: center;
+      font-weight: 700;
+      position: relative;
+      font-family: "Montserrat", sans-serif;
+    }
+    p {
+      text-align: center;
+      margin: auto;
+      font-size: 15px;
+      padding-bottom: 60px;
+      color: $gray-blue;
+      width: 50%;
+    }
+  }
+@media (max-width: 767px) {
+  .section-header p {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  height: 110px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  &.header-scrolled,
+  &.header-pages {
+    height: 70px;
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow:$header-shadow;
+  }
+  &.header-scrolled #topbar,
+  &.header-pages #topbar {
+    display: none;
+  }
+  .logo {
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      a {
+        color: $dark-blue;
+        text-decoration: none;
+        &:hover {
+          color: $dark-blue;
+          text-decoration: none;
+        }
+      }
+    }
+    img {
+      padding: 0;
+      margin: 7px 0;
+      max-height: 26px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #header {
+    height: 70px;
+    padding: 15px 0;
+    .logo h1 {
+      font-size: 28px;
+      padding: 8px 0;
+    }
+  }
+}
+
+.main-pages {
+  margin-top: 60px;
+}
