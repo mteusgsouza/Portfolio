@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-color: $bg-intro;
   background-position: left;
-  background-size: cover 50%;
+  background-size: 50%;
   .intro-info {
     h2 {
       color: $dark-blue;
@@ -44,10 +44,11 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   #intro {
-    height: auto;
-    padding: 80px 0 60px 0;
+    background-image: none;
+    height: 100vh;
+    padding: 100px 0 60px 0;
     .container {
       height: auto !important;
     }
@@ -56,10 +57,10 @@
     }
     .intro-info {
       text-align: center;
-      padding-top: 40px;
+      padding-top: 80px;
       h2 {
         font-size: 34px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
     }
   }

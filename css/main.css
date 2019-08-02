@@ -390,7 +390,7 @@ h6 {
   background-repeat: no-repeat;
   background-color: rgba(127, 137, 161, 0.2);
   background-position: left;
-  background-size: cover 50%; }
+  background-size: 50%; }
   #intro .intro-info h2 {
     color: #413e66;
     margin-bottom: 40px;
@@ -420,20 +420,21 @@ h6 {
   #intro .intro-info .btn-abilities:hover {
     background: #0a98c0; }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   #intro {
-    height: auto;
-    padding: 80px 0 60px 0; }
+    background-image: none;
+    height: 100vh;
+    padding: 100px 0 60px 0; }
     #intro .container {
       height: auto !important; }
     #intro .intro-img {
       width: 80%; }
     #intro .intro-info {
       text-align: center;
-      padding-top: 40px; }
+      padding-top: 80px; }
       #intro .intro-info h2 {
         font-size: 34px;
-        margin-bottom: 30px; } }
+        margin-bottom: 40px; } }
 
 @media (min-width: 992px) {
   #intro .intro-info {
@@ -540,13 +541,17 @@ h6 {
     font-size: 18px; }
     #abilities .title a {
       color: #111; }
-  #abilities .box:hover .title a {
-    color: #1bb1dc; }
   #abilities .description {
     font-size: 14px;
     line-height: 28px;
     margin-bottom: 0;
     text-align: left; }
+
+@media (max-width: 800px) {
+  #abilities .box:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
 
 /* Timeline Section
 --------------------------------*/
