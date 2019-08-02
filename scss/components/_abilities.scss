@@ -47,10 +47,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #abilities {
-    .box:hover {
-      transform: none;
+    .box {
+      transition: none;
+      &:hover {
+        transform: none;
+      }
     }
   }
 }

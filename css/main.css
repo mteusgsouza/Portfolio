@@ -547,11 +547,15 @@ h6 {
     margin-bottom: 0;
     text-align: left; }
 
-@media (max-width: 800px) {
-  #abilities .box:hover {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none; } }
+@media (max-width: 900px) {
+  #abilities .box {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none; }
+    #abilities .box:hover {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; } }
 
 /* Timeline Section
 --------------------------------*/
