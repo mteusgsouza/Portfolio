@@ -23,9 +23,11 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 900px) {
   #topbar {
-    display: none;
+   .social-links{
+     display:none;
+   }
   }
 }
 
