@@ -1,4 +1,4 @@
-# Portifolio
+# Portfolio
 Portfólio pessoal
 
-# Link para prewiew do site: https://mteus-portifolio.netlify.com
+# Link para prewiew do site: https://mteugsouza.web.app/
