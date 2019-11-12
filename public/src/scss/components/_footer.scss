@@ -151,12 +151,6 @@
           border: 1px solid #dce1ec;
           font-size: 14px;
         }
-        input::-webkit-input-placeholder,
-        textarea::-webkit-input-placeholder,
-        input::-moz-placeholder,
-        textarea::-moz-placeholder,
-        input:-ms-input-placeholder,
-        textarea:-ms-input-placeholder,
         input::placeholder,
         textarea::placeholder {
           color: #a2a0bd;
